@@ -3,6 +3,10 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 
 import Splash from "./screens/Splash";
+import Wishlist from "./screens/Wishlist";
+import Khaadi from "./screens/Khaadi";
+import Menu from "./screens/Menu";
+import Home from "./screens/Home";
 import Signup from "./screens/Signup";
 import Signin from "./screens/Signin";
 
@@ -20,6 +24,26 @@ const App = () => {
             <Stack.Screen
               name="Splash"
               component={Splash}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Wishlist"
+              component={Wishlist}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Khaadi"
+              component={Khaadi}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Menu"
+              component={Menu}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Home"
+              component={Home}
               options={{ headerShown: false }}
             />
             <Stack.Screen
